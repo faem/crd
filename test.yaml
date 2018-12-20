@@ -1,4 +1,4 @@
-apiVersion: v1alpha1
+apiVersion: "crd.com/v1alpha1"
 kind: CustomPod
 metadata:
   name: "cpod"
@@ -9,4 +9,4 @@ spec:
     - name: api-latest
       image: "fahimabrar/api:latest"
     - name: api-alpine
-        image: "fahimabrar/api:alpine"
+      image: "fahimabrar/api:alpine"

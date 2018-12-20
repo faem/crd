@@ -4,10 +4,10 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/runtime/schema"
-	"crd/pkg/apis/crd"
+	"crd/pkg/apis/crd.com"
 )
 
-var SchemeGroupVersion = schema.GroupVersion{Group: crd.GroupName, Version: "v1alpha1"}
+var SchemeGroupVersion = schema.GroupVersion{Group: crdcom.GroupName, Version: "v1alpha1"}
 
 func Resource(resource string) schema.GroupResource {
 	return SchemeGroupVersion.WithResource(resource).GroupResource()

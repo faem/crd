@@ -1,4 +1,4 @@
-package crd
+package crdcom
 
 const (
 	GroupName = "crd.com"

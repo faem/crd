@@ -1,0 +1,12 @@
+apiVersion: v1alpha1
+kind: CustomPod
+metadata:
+  name: "cpod"
+  labels:
+    app: cpod
+spec:
+  containers:
+    - name: api-latest
+      image: "fahimabrar/api:latest"
+    - name: api-alpine
+        image: "fahimabrar/api:alpine"

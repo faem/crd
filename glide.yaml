@@ -1,6 +1,9 @@
-package: github.com/openshift-evangelists/crd.com-code-generation
+package: crd
 import:
-- package: github.com/golang/glog
+- package: github.com/tamalsaha/go-oneliners
+- package: k8s.io/apiextensions-apiserver
+  subpackages:
+  - pkg/apis/apiextensions/v1beta1
 - package: k8s.io/apimachinery
   subpackages:
   - pkg/api/errors
@@ -13,7 +16,6 @@ import:
   - pkg/util/runtime
   - pkg/watch
 - package: k8s.io/client-go
-  version: v10.0.0
   subpackages:
   - discovery
   - discovery/fake
@@ -22,7 +24,3 @@ import:
   - tools/cache
   - tools/clientcmd
   - util/flowcontrol
-- package: k8s.io/code-generator
-- package: k8s.io/gengo
-- package: golang.org/x/tools
-- package: k8s.io/apiextensions-apiserver
